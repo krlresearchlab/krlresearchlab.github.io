@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://krlresearch.github.io/sitemap.xml
+Sitemap: https://krlresearch.github.io/sitemap2.xml
