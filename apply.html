@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="K.R.L. Research Lab — Applied Economics & Data Science at the University of Toronto, led by Professor Nazanin Khazra.">
+<meta name="keywords" content="KRL Lab, University of Toronto, economics, data science, econometrics, research lab, Nazanin Khazra">
+<title>Apply — K.R.L. Research Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="nav-logo-icon">K</div>
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">K.R.L. Research Lab</div>
+        <div class="nav-logo-sub">University of Toronto</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <div class="nav-item"><a href="index.html">Home</a></div>
+      <div class="nav-item">
+        <a href="research.html">Research</a>
+        <div class="nav-dropdown">
+          <a href="research.html">Projects</a>
+          <a href="resources.html">Resources &amp; Maps</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="people.html">People</a>
+        <div class="nav-dropdown">
+          <a href="people.html">Current Team</a>
+          <a href="alumni.html">Alumni</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="events.html">Events</a></div>
+      <div class="nav-item"><a href="apply.html" class="active">Apply</a></div>
+      <button class="nav-search-btn" onclick="openSearch()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        Ctrl K
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="search-overlay" id="searchOverlay" onclick="closeSearch()">
+  <div class="search-box" onclick="event.stopPropagation()">
+    <div class="search-inner">
+      <div class="search-input-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="searchInput" placeholder="Search people, research, events…" oninput="doSearch()">
+        <button class="search-esc" onclick="closeSearch()">ESC</button>
+      </div>
+      <div id="searchResults"></div>
+    </div>
+  </div>
+</div>
+
+<div style="padding-top:68px">
+  <div class="page-header"><div class="page-header-inner"><h1>Join the Lab</h1><div class="subtitle">We're looking for curious, motivated students interested in economics, data science, and evidence-based policy.</div></div></div>
+  <section class="section grey-bg">
+    <div class="section-inner narrower">
+      <div class="card no-hover apply-card reveal">
+        <h2>What We Look For</h2>
+        <div id="applyReqs"></div>
+        <div class="apply-note"><p>Applications are currently open for <strong>Winter 2026</strong>. We accept students at all levels — what matters most is your curiosity and commitment.</p></div>
+        <div style="text-align:center"><a href="https://forms.office.com/pages/responsepage.aspx?id=JsKqeAMvTUuQN7RtVsVSEB2rn6VEknlDvD0Hax_IFBVUNlpHWFo4NUkxRU43UzNEOENRMDZMWVBMMy4u&route=shorturl" target="_blank" class="btn-apply">Apply Now</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><div class="icon">K</div><span>K.R.L. Research Lab</span></div>
+        <p class="footer-addr">Department of Economics<br>University of Toronto<br>Toronto, ON, Canada</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Research</div>
+        <a href="research.html">Projects</a>
+        <a href="resources.html">Resources &amp; Maps</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">People</div>
+        <a href="people.html">Current Team</a>
+        <a href="alumni.html">Alumni</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Connect</div>
+        <a href="https://github.com/KRLResearchLab" target="_blank">GitHub</a>
+        <a href="events.html">Events</a>
+        <a href="apply.html">Apply</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2025 K.R.L. Research Lab &middot; University of Toronto</span>
+      <a href="https://www.nazaninkhazra.com/home" target="_blank" class="footer-link">Prof. Khazra&rsquo;s Website &rarr;</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
