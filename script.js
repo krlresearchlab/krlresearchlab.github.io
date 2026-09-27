@@ -5,6 +5,8 @@ const TEAM = [
   {name:"Kaiden Beskers",year:"4th Year",program:"Astrophysics & Economics",project:"Working on a project about people experiencing homelessness in Toronto.",img:"images/kaiden.png",linkedin:"https://www.linkedin.com/in/kaiden-beskers-b824482ab/"},
   {name:"Anh Dang Phuong",year:"4th Year",program:"Computer Science, Data Science & Economics",project:"Working on a project about the homelessness landscape in Toronto.",img:"images/amy.jpg",linkedin:"https://www.linkedin.com/in/phuonganhdangamy/"},
   {name:"Akshat Oza",year:"4th Year",program:"Computer Science & Economics",project:"Working on a project evaluating policies and their impact on people experiencing homelessness in Toronto.",img:"images/akshat.jpg",linkedin:"https://www.linkedin.com/in/akshatoza/"},
+  {name:"Momoko Takahashi",year:"3rd Year",program:"Economics & Statistics",project:"Working on a project on policy events and homelessness in Toronto.",img:"images/momoko.png",linkedin:"https://www.linkedin.com/in/momoko-takahashi-abb894336/"},
+  {name:"Mark Potter",year:"Master's Student",program:"Economics",project:"Working on a project evaluating the impact of policy on homelessness in Toronto.",img:"images/mark.png",linkedin:"https://www.linkedin.com/in/mark-r-potter/"},
 ];
 
 const ALUMNI = [
