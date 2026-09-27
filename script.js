@@ -1,17 +1,16 @@
 /* ── DATA ── */
 const TEAM = [
-  {name:"Polyna German",year:"3rd Year",program:"Computer Science & Economics",project:"Collecting and analyzing faculty demographic data for the Canadian Economics Diversity Project (CEDP).",img:"images/pol.png",linkedin:"https://can01.safelinks.protection.outlook.com/?url=http%3A%2F%2Flinkedin.com%2Fin%2Fpolynagerman&data=05%7C02%7Cpolyna.german%40mail.utoronto.ca%7C42cd2b2650f34a57d56908de46f45300%7C78aac2262f034b4d9037b46d56c55210%7C0%7C0%7C639026212335267659%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=MYfZp3ricjPujBdcMYjFjFpOHLX%2BIWHJlDWRGVW2ICk%3D&reserved=0"},
-  {name:"Hal Glover",year:"4th Year",program:"Economics",project:"Working on the Airbnb and housing market project.",img:"images/hal.png",linkedin:"https://www.linkedin.com/in/hglover/"},
-  {name:"Leran Xu",year:"4th Year",program:"Psychology & Economics",project:"Working on migration patterns regarding social events.",img:"images/leran.png",linkedin:"https://www.linkedin.com/in/leran-xu-423467270/"},
-  {name:"Mashiat Abonty",year:"4th Year",program:"Economics & Statistics",project:"Working on the women's hygiene products market research.",img:"images/mashiat.png",linkedin:"https://www.linkedin.com/in/muntaha-mashiat-abonty-2a7b58326/"},
-  {name:"Emerson Schryver",year:"3rd Year",program:"Economics & Mathematics",project:"Working on a wide range of topics involving ML and economics.",img:"images/emerson.png",linkedin:"https://www.linkedin.com/in/eschry/"},
-  {name:"Kaiden Beskers",year:"3rd Year",program:"Astrophysics & Economics",project:"Working on a project about people experiencing homelessness in Toronto.",img:"images/kaiden.png",linkedin:"https://www.linkedin.com/in/kaiden-beskers-b824482ab/"},
-  {name:"Anh Dang Phuong",year:"3rd Year",program:"Computer Science, Data Science & Economics",project:"Working on a project about the homelessness landscape in Toronto.",img:"images/amy.jpg",linkedin:"https://www.linkedin.com/in/phuonganhdangamy/"},
-  {name:"Akshat Oza",year:"3rd Year",program:"Computer Science & Economics",project:"Working on a project evaluating policies and their impact on people experiencing homelessness in Toronto.",img:"images/akshat.jpg",linkedin:"https://www.linkedin.com/in/akshatoza/"},
+  {name:"Polyna German",year:"4th Year",program:"Computer Science & Economics",project:"Collecting and analyzing faculty demographic data for the Canadian Economics Diversity Project (CEDP).",img:"images/pol.png",linkedin:"https://www.linkedin.com/in/polynagerman"},
+  {name:"Emerson Schryver",year:"4th Year",program:"Economics & Mathematics",project:"Working on a wide range of topics involving ML and economics.",img:"images/emerson.png",linkedin:"https://www.linkedin.com/in/eschry/"},
+  {name:"Kaiden Beskers",year:"4th Year",program:"Astrophysics & Economics",project:"Working on a project about people experiencing homelessness in Toronto.",img:"images/kaiden.png",linkedin:"https://www.linkedin.com/in/kaiden-beskers-b824482ab/"},
+  {name:"Anh Dang Phuong",year:"4th Year",program:"Computer Science, Data Science & Economics",project:"Working on a project about the homelessness landscape in Toronto.",img:"images/amy.jpg",linkedin:"https://www.linkedin.com/in/phuonganhdangamy/"},
+  {name:"Akshat Oza",year:"4th Year",program:"Computer Science & Economics",project:"Working on a project evaluating policies and their impact on people experiencing homelessness in Toronto.",img:"images/akshat.jpg",linkedin:"https://www.linkedin.com/in/akshatoza/"},
 ];
 
 const ALUMNI = [
-  // {name:"Sample Alumni 1",year:"2024",program:"Economics",now:"Hopefully somewhere good"},
+  {name:"Hal Glover",img:"images/hal.png"},
+  {name:"Leran Xu",img:"images/leran.png"},
+  {name:"Mashiat Abonty",img:"images/mashiat.png"},
 ];
 
 const RESEARCH = [
@@ -97,7 +96,7 @@ function renderPeopleCards(){
 /* ── Render: Alumni ── */
 function renderAlumni(){
   var el=document.getElementById('alumniList');if(!el)return;
-  el.innerHTML=ALUMNI.map(function(a,i){return '<div class="card alumni-card reveal" style="transition-delay:'+i*0.1+'s">'+avatarHTML(a.name,'md')+'<div style="flex:1"><h4>'+a.name+'</h4><div class="sub">'+a.program+' &middot; Class of '+a.year+'</div></div><div class="now">'+a.now+'</div></div>'}).join('')+'<p class="reveal" style="text-align:center;margin-top:28px;font-size:13px;color:var(--text-light);font-style:italic;transition-delay:.2s">Alumni list is updated as the lab grows.</p>';
+  el.innerHTML=ALUMNI.map(function(a,i){return '<div class="card team-card-sm reveal" style="transition-delay:'+i*0.07+'s">'+photoAvatarHTML(a.img,a.name,'lg')+'<h4>'+a.name+'</h4></div>'}).join('');
 }
 
 /* ── Render: Events ── */
